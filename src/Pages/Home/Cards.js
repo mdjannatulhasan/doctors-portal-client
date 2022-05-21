@@ -5,7 +5,7 @@ const Cards = ({ card }) => {
     return (
         <div className="">
             <div className={`card text-white  lg:card-side bg-accent shadow-xl ${bgClass}`}>
-                <figure className="pl-5">
+                <figure className="pl-5 pt-10 lg:pt-0">
                     <img src={img} alt="Album" />
                 </figure>
                 <div className="card-body">

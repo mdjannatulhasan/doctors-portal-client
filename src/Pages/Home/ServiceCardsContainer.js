@@ -1,21 +1,23 @@
 import React from "react";
-import Cards from "./Cards";
-import clock from "../../assets/icons/clock.svg";
-import marker from "../../assets/icons/marker.svg";
-import phone from "../../assets/icons/phone.svg";
+import ServiceCard from "./ServiceCard";
+import fluoride from "../../assets/images/fluoride.png";
+import cavity from "../../assets/images/cavity.png";
+import whitening from "../../assets/images/whitening.png";
 
 const ServiceCardsContainer = () => {
     const cardsInfo = [
-        { title: "Opening Hours", desc: "Lorem Ipsum is simply dummy text of the pri", img: clock, bgClass: "bg-gradient-to-r from-secondary to-primary" },
-        { title: "Opening Hours", desc: "Lorem Ipsum is simply dummy text of the pri", img: clock, bgClass: "bg-accent" },
-        { title: "Opening Hours", desc: "Lorem Ipsum is simply dummy text of the pri", img: clock, bgClass: "bg-gradient-to-r from-secondary to-primary" },
+        { title: "Fluoride Treatment", desc: "Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the", img: fluoride },
+        { title: "Cavity Filling", desc: "Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the", img: cavity },
+        { title: "Teeth Whitening", desc: "Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the", img: whitening },
     ];
     return (
-        <section>
+        <section className="py-10">
             <div className="container pb-6">
+                <h4 className="text-uppercase text-secondary text-center font-bold">Our Services</h4>
+                <h2 className="text-4xl text-center pb-10 pt-2">Services We Provide</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {cardsInfo.map((card, index) => (
-                        <Cards key={index} card={card}></Cards>
+                        <ServiceCard key={index} card={card}></ServiceCard>
                     ))}
                 </div>
             </div>
