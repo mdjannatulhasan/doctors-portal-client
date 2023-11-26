@@ -10,9 +10,9 @@ const ContactFormSec = () => {
                         <h4 className="text-secondary text-center font-bold pb-1">Contact Us</h4>
                         <h2 className="text-4xl text-center font-semibold pb-8">Make an appointment Today</h2>
                         <form className="flex flex-col space-y-4 items-center">
-                            <input type="email" placeholder="Email Address" class="input w-full" />
-                            <input type="text" placeholder="Subject" class="input w-full" />
-                            <textarea rows="4" placeholder="Your Message" class="textarea w-full"></textarea>
+                            <input type="email" placeholder="Email Address" className="input w-full" />
+                            <input type="text" placeholder="Subject" className="input w-full" />
+                            <textarea rows="4" placeholder="Your Message" className="textarea w-full"></textarea>
                             <input
                                 type="submit"
                                 value="Send"
